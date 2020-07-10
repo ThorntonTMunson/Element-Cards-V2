@@ -1,0 +1,159 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red155\green0\blue211;\red0\green77\blue187;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\b\f0\fs36\lang9 Element Cards\par
+\ulnone\fs28 Timeline of made progress and goals that need to be reached\par
+
+\pard\sl240\slmult1\qc\par
+
+\pard\sl240\slmult1\cf1\ul\fs24 6-8-2020 Goals:\par
+\ulnone\b0 Create a python program that uses the tkinter module to create a window to read in cards.\par
+More or less copy the Black Jack project from Learn Python with Tum Buchalka for the base and make adjustments to better fit the program.\par
+\cf2\ul\b\fs22 6-8-2020 Progress:\par
+\ulnone\b0 Copied most of the code from class over, a few problems persist.\par
+Made some adjustments to fit a vs stye card game, still using the Black Jack window fram until I figure out how the card game works and what the layout on screen should look like.\par
+Made basic set of each card, nothing fancy just a placeholder. upgrade card images later?\par
+Some errors thrown for current program rendition, but still runs. Cards are not being auto loaded onto the screen. ~Need to fix this to make sure cards are being loaded or the pathing is correct.\par
+All code made in single pyfile (redo into oop later when things are working and Iv'e finished the section on oop fromLearn Python with Tim Buchalka)\par
+\cf1\ul\b 6-9-2020 Goals:\par
+\ulnone\b0 Add buttons, get cards to be loaded on screen, figure out how game should play\cf0\par
+\cf2\ul\b 6-9-2020 Progress:\par
+\ulnone\b0 Added buttons: Comp Player, Player, Shuffle and New Match\par
+Buttons have no code in them, dont't do anything\par
+Got user and comp health score to display on screen, reads 0 should read 20 at start\par
+Cards still not loading to screen.\par
+Figured out how base game will work, see Element Card Game documents\par
+Ran into similar problem regarding tuples with the original Black Jack project, figured it out in about 10 minutes instead of an entire day (yay!)\par
+\cf1\ul\b 6-10-2020 Goals:\par
+\ulnone\b0 Give buttons functions, get cards loaded to screen, get player health to start at 20, figure out new window layout for game after makeing sure cards are being read into the game, make sure each card is working alongside the rules of the game properly before adding the rest of this, add deck building option, add way to store cards in a deck, add automatic computer turn after player is finished their turn. Want to add card effects, but should get mvp available first before starting to tinker with the smaller items.\par
+All of areas in this part deal with the window (tkinter) , add a deck space for both sides, add a hand space for both sides, add a card play space for both sides, add a discard pile for both sides \cf2\par
+\ul\b 6-10-2020 Progress:\par
+\ulnone\b0 Frames within window are not aligning properly\par
+\cf1\ul\b 6-13-2020 Goals:\par
+\ulnone\b0 Get tkinter frames to aign properly\par
+\cf2\ul\b 6-13-2020 Progress:\par
+\ulnone\b0 What am I doing wrong?\par
+\cf1\ul\b 6-14-2020 Goals:\par
+\ulnone\b0 Get frames to align properly\par
+\cf2\ul\b 6-13-2020 Progress:\par
+\ulnone\b0 Identified the different frames by color coding the frames\par
+Still out of alignment\par
+\cf1\ul\b 6-15-2020 Goals:\par
+\ulnone\b0 Get frames to align properly\par
+\cf2\ul\b 6-14-2020 Progress:\par
+\ulnone\b0 Looked back at frame layout design, it's too complicated.\par
+Simplified the frame set up\par
+\cf1\ul\b 6-15-2020 Goals:\par
+\ulnone\b0 Re arrange the frames within window to fit new simpler design\par
+\cf2\ul\b 6-15-2020 Progress:\par
+\ulnone\b0 Simplified the frame set up\par
+Frames are not aligning properly, think I'm missing something fundamentally\par
+\cf1\ul\b 6-16-2020 Goals:\par
+\ulnone\b0 Line up the frames properly\par
+\cf2\ul\b 6-16-2020 Progress:\ulnone\b0\par
+Re watched the Udemy Python course on tkinter\par
+Didn't find solution to problem\par
+\cf1\ul\b 6-17-2020 Goals:\par
+\ulnone\b0 line up frames properly\par
+\cf2\ul\b 6-17-2020 Progress:\par
+\ulnone\b0 Finally figured out the problem. The frames within the window are set within a grid to the window, if no picture or data is loaded into the frame it displays where Python thinks it should be.\par
+Comp and player buttons load an image from the cards in folder\par
+Deck image not loading for some reason\par
+\cf1\ul\b 6-19-2020 Goals:\par
+\ulnone\b0 Get images to load into all frames\par
+\cf2\ul\b 6-19-2020 Progress:\par
+\ulnone\b0 Comp and player hands load images indefinitly but only with the click of the draw card button\par
+Working on the computer side of the user interface since the player side will be a mirror image of the frames.\par
+Deck image frame still not loading\par
+Discard pile not working\par
+\cf1\ul\b 6-20-2020 Goals:\par
+\ulnone\b0 Load an image into each frame of the computer player\par
+\cf2\ul\b 6-20-2020 Progress:\ulnone\b0\par
+code is not throwing any errors . Still not able to load the "card backing" image into the deck area.\par
+limiting the hand size to a max of 5 not working\par
+\cf1\ul\b 6-21-2020 Goals:\par
+\ulnone\b0 Limit max hand size to 5\par
+Load deck into deck frame\cf2\par
+\ul\b 6-21-2020 Progress:\par
+\ulnone\b0 Need to drop limiting the hand size for now. Research suggests it takes code that crosses the tkinter library. Will need to study that.\par
+Card backing not loading into deck frame\par
+\cf1\ul\b 6-22-2020 Goals:\par
+\ulnone\b0 Load deck image into deck frame\par
+\cf2\ul\b 6-22-2020 Progress:\par
+\ulnone\b0 Card backing not loading into deck frame\par
+For testing purposes loaded random image into discard pile, not loading \par
+\cf1\ul\b 6-23-2020 Goals:\par
+\ulnone\b0 Lad an image into the deck and discard pile frames\par
+\cf2\ul\b 6-23-2020 Progress:\par
+\ulnone\b0 Been doing this for a week with no progres what so ever. \par
+\cf1\ul\b 6-26-2020 Goals:\par
+\ulnone\b0 Get images loaded to deck frame , hand frame, field frame, and discard frame\par
+\cf2\ul\b 6-26-2020 Progress:\par
+\ulnone\b0 Images only loading to comp_hand frame\cf1\ul\b\par
+
+\pard\sl276\slmult1 6-27-2020 Goals:\par
+\ulnone\b0 Load images to all frames\par
+\cf2\ul\b 6-27-2020 Progress:\par
+\ulnone\b0 images only loading to comp_hand frame and player_hand frame\par
+No errors thrown with anything else, but still not loading the images\par
+Frames not quite aligned where they should be\par
+\cf1\ul\b 6-28-2020 Goals:\par
+\ulnone\b0 Arrange the frames properly\par
+Load images to all frames\par
+\cf2\ul\b 6-28-2020 Progress:\par
+\ulnone\b0 Aligned frames to be where they needed to be\par
+New problem: player_hand frame now covers up most of the comp_hand frame\par
+Images still not loading into deck frame and discard frame\par
+\cf1\ul\b 6-29-2020 Goals:\par
+\ulnone\b0 Get player_hand frame to stop overlapping comp hand frame\par
+load images into deck frames and discard frames\par
+\cf2\ul\b 6-29-2020 Progress:\par
+\ulnone\b0 No progress\par
+\cf1\ul\b 6-30-2020 Goals:\par
+\ulnone\b0 Make player_hand frame stop covering com_hand frame\par
+\cf2\ul\b 6-30-2020 Progress:\par
+\ulnone\b0 The player_hand frame is most likely covering the comp\-_hand frame since the play field on both sides of the window do not have an image loaded into them and is just using them as blank space.\par
+Why can't I get any images to load into the deck or discard frames?\par
+\cf1\ul\b 7-2-2020 Goals:\par
+\ulnone\b0 Load images into the deck, discard, and play fields\par
+\cf2\ul\b 7-2-2020 Progress:\par
+\ulnone\b0 Images not loading into anything except player and comp hand\par
+\cf1\ul\b 7-3-2020 Goals:\par
+\ulnone\b0 Images = load into respective  frames\par
+\cf2\ul\b 7-3-2020 Progress:\par
+\ulnone\b0 Since the only images are loading into the player and comp hand, implemented temporary buttons to "draw" a card image into the deck/discard/field frames.\\\par
+Lots of errors! something is preventing the draw_card method from being used for the other frames.\par
+\cf1\ul\b 7-4-2020 Goals:\par
+\ulnone\b0 Re write the draw_card method to work with the other frames for testing purposes.\par
+Load images into all the frames\par
+remove extra buttons when things work\par
+\cf2\ul\b 7-4-2020 Progress:\par
+\ulnone\b0 I seem to be missing something with the draw card method. It works from the Udemy class's Black Jack program. Re writing it to use for my test buttons isn't working.\par
+\cf1\ul\b 7-5-2020 Goals:\par
+\ulnone\b0 Find out if there is a way to make the frames stay aligned even with blank space and just the frame borders.\cf2\par
+\ul\b 7-5-2020 Progress:\par
+\ulnone\b0 Research suggests there is a snap to grid, pack, and placing a frame within another frame to keep things lined up.\par
+Found very little on the snap to fame methods\par
+Using pack methods are usually only for placing a frame wihin another frame. Kind of like arranging items inside of a box.\par
+Placing a frame within a frame for simple things is quite useful. frames within frames gets complicated really quickly. Should avoid using this method unless I have to.\par
+\cf1\ul\b 7-6-2020 Goals:\par
+\ulnone\b0 try using the snap to grid methods to align frames and keep images from overlapping each other.\par
+\cf2\ul\b 7-6-2020 Progress:\par
+\ulnone\b0 Snap methods too confusing with such a small number of examples.\par
+tried using pack methods with just the frames, still not working.\par
+\cf1\ul\b 7-8-2020 Goals:\par
+\ulnone\b0 load images to all frames and make them not overlap each other.\par
+\cf2\ul\b 7-8-2020 Progress:\par
+\ulnone\b0 No progress\par
+\cf1\ul\b 7-9-2020 Goals:\par
+\ulnone\b0 Load images to all frames and make them not overlap other frames\par
+\cf2\ul\b 7-9-2020 Progress:\par
+\ulnone\b0 No progress\par
+Smashing my head into this is not going anywhere. should work on something else to help clear my head. Might help to reset my mind. Constant failure proably is having a pscological effect making it harder than it should be.\par
+\cf1\ul\b 7-10-2020 Goals:\par
+\ulnone\b0 Change focus to the logic of how cards interac with each other\par
+basic card funtions are similar use oop, overloading methods, and classes to reduce lines of code needed.\par
+\cf2\ul\b 7-10-2020 Progress:\par
+\cf0\ulnone\b0\par
+}
+ 
